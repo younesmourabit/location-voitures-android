@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#DEEBFF"
+    android:layout_centerHorizontal="true">
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/mercedes"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/marque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Marque"
+        android:textColor="#0F0E0E"
+        android:textSize="34sp" />
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/marque"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Options"
+        android:textColor="#0F0E0E"
+        android:textSize="34sp" />
+    <TextView
+        android:id="@+id/modele"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/options"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Modele"
+        android:textColor="#0F0E0E"
+        android:textSize="34sp" />
+    <TextView
+        android:id="@+id/prix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modele"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Prix"
+        android:textColor="#0F0E0E"
+        android:textSize="34sp" />
+    <Button
+        android:id="@+id/btn_reserver"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prix"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="RÉSERVER"
+        />
+    <Button
+        android:id="@+id/btn_routeur"
+        android:layout_marginRight="100dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prix"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Précédent"
+        />
+
+</RelativeLayout>

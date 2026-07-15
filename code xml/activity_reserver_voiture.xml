@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reserver_voiture"
+    android:background="#E8F6DD">
+
+    <TextView
+        android:id="@+id/reservation"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Réservation Voiture"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/voiture_reserver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voiture à réserver :"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/reservation" />
+    <TextView
+        android:id="@+id/voiture_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservation"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="67dp"
+        android:text="Type Voiture"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/saisir_info"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom et prénom"
+        android:inputType="text"
+        android:layout_below="@id/voiture_reserver" />
+    <EditText
+        android:id="@+id/saisir_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/saisir_info" />
+
+    <EditText
+        android:id="@+id/saisir_pays"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Votre pays"
+        android:inputType="text"
+        android:layout_below="@id/saisir_email" />
+    <EditText
+        android:id="@+id/edt_num"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone"
+        android:inputType="number"
+        android:layout_below="@id/saisir_pays" />
+    <EditText
+        android:id="@+id/edt_emploi"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Pays d'emploi"
+        android:inputType="text"
+        android:layout_below="@id/edt_num" />
+
+    <EditText
+        android:id="@+id/saisir_commentaire"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:hint="Commentaire"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_below="@id/edt_emploi"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+    <Button
+        android:id="@+id/btn_date_sortie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saisir_commentaire"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:text="Date de Sortie" />
+    <Button
+        android:id="@+id/btn_date_retour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saisir_commentaire"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:text="Date de Retour" />
+
+    <Button
+        android:id="@+id/btn_enregistrer"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_date_retour"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:enabled="false"
+        android:text="Enregistrer" />
+
+    <Button
+        android:id="@+id/btn_quitter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:text="Quitter"
+        android:layout_below="@+id/btn_date_retour"
+         />
+    <TextView
+        android:id="@+id/textAfficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre réservation a bien été effectuée"
+        android:layout_below="@+id/btn_enregistrer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
