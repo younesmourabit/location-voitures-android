@@ -111,9 +111,3 @@ Année universitaire : **2024-2025**
 Le rapport complet du projet est disponible dans le fichier :
 
 **Younes MOURABIT.pdf**
-
----
-
-## 📜 Licence
-
-Projet réalisé dans un cadre pédagogique.
